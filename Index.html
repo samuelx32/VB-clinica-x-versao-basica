@@ -9,6 +9,7 @@
     <meta name="theme-color" content="#00b8b4">
     <title>CLINICA X</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta name="theme-color" content="#4DBA87">
     <meta name="apple-mobile-web-app-capable" content="no">
@@ -25,6 +26,8 @@
                     <div class="header-content-logo">
                       <h2 class="logo">Clinica X</h2>
                     </div>
+
+                    
                    
                     <div class="header-content-right">
                       <div class="header-content-nav-item">
@@ -45,13 +48,30 @@
                       <div class="header-content-nav-item">
                           <a href="#contato" class="">Contato</a>
                       </div>
-
-                         
-                    </div>
+                      
+                     
+                  </div>
+                  
+                  <section class="botao-mobile">
+                    <a href="javascript:void(0);" class="iconMobile" onclick="myFunction()">
+                      <i class="fa fa-bars"></i>
+                    </a>  
+                  </section>
+                    
                 </div>
+
+
                 
-                <section id="mobile">
-                    <!--Menu responsivo vai Aqui-->
+                <section class="menu-mobile">
+                  <div class="topnavMobile">
+                    
+                    <div id="myLinksMenu">
+                      <a href="index.html" class="">Home</a>
+                      <a href="#home-servicos" class="">Serviços</a>
+                      <a href="#home-servicos2">Atentimento</a>
+                      <a href="#contato" class="">Contato</a>
+                    </div>
+                  </div>
                 </section>
                 
                 </div>
@@ -221,6 +241,17 @@
                   </div>
                 </div> 
       </div>
+
+      <script>
+        function myFunction() {
+        var x = document.getElementById("myLinksMenu");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+      </script>
                   
               <script>
   $(window).scroll(function () {
@@ -270,21 +301,8 @@ function showSlides() {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 8000); // Change image every 2 seconds
-}</script><script>//Menu Mobile
-  $('.btn-menu').on('click', function () {
-    $('html').toggleClass('btn-menu-active');
-    $('.header').toggleClass('header-white');
-  });
+}</script>
 
-  $('.btn-close').on('click', function () {
-    $('html').removeClass('btn-menu-active');
-    $('#nav-icon4').removeClass('open');
-  });
-  $(document).ready(function () {
-    $('#nav-icon4').click(function () {
-      $(this).toggleClass('open');
-    });
-  });</script>
   
 </body>
 
