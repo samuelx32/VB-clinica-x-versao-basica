@@ -191,8 +191,8 @@ section{width:100%}
 }
 
 
-a.btn-social{vertical-align:middle}
-a.btn-social,button.btn-buscar{display:inline-block;width:24px;height:24px;background-size:24px 24px}
+a.btn-social{vertical-align:middle;}
+a.btn-social,button.btn-buscar{display:inline-block;width:24px;height:24px;background-size:24px 24px;}
 
 .buscar-content{width:90%;max-width:1200px;margin:0 auto;opacity:1;display:block;box-sizing:content-box}
 .buscar-content input{width:100%;float:left;padding:24px 26px;box-sizing:border-box;font-size:16px;font-weight:600;color:#00629d;border:none;border-bottom:2px solid #00b8b4;background-color:hsla(0,0%,100%,.85);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);outline:none;font-family:Open Sans,sans-serif;box-shadow:0 4px 4px rgba(0,0,0,.08)}
@@ -210,7 +210,7 @@ a.btn-social,button.btn-buscar{display:inline-block;width:24px;height:24px;backg
 h5:before{margin-right:10px;top:5px;position:relative}
 
 
-.slide{width:100%;min-height:80%;box-sizing:border-box;margin-bottom:-22px;}
+.slide{width:100%;min-height:80%;box-sizing:border-box;}
 .slideshow-container{
   -webkit-animation:color-change-2x 6s linear infinite alternate both;animation:color-change-2x 6s linear infinite alternate both;width:100%
 }
@@ -233,6 +233,24 @@ h5:before{margin-right:10px;top:5px;position:relative}
 .next{right:0;border-radius:3px 0 0 3px}
 .next:hover,.prev:hover{color:hsla(0,0%,100%,.75)}
 .slide-button{position:relative;top:-50px;z-index:10}
+
+@media only screen and (max-width:1100px){
+  .mySlides-content{
+    padding: 40px 0 40px 0;
+  }
+
+  .slide h1{
+    text-align: center;
+    padding:10px 0 0 0;
+  }
+  .carrousel-content-item-cta p{
+    text-align: center;
+    padding:80px 10px 80px 10px;
+    margin:0px 10px; 
+    line-height:36px;
+  }
+
+}
 
 .dot{cursor:pointer;height:13px;width:13px;margin:0 8px;background-color:hsla(0,0%,100%,.25);border-radius:50%;display:inline-block;transition:background-color .6s ease}
 .active,.dot:hover{background-color:#fff}
@@ -321,8 +339,15 @@ h5:before{margin-right:10px;top:5px;position:relative}
 .itens-selecionados h5{color:#888}
 .itens-selecionados-tags{width:100%;height:auto;padding:10px;margin-top:10px;display:block;text-align:left!important;float:left!important}
 .itens-selecionados-tags span{background:#00629d;padding:3px 5px;border-radius:5px;margin:0 5px 5px 0;display:inline-block;color:#fff!important;font-size:12px;float:none}
+
 #home-quem-somos{background:#fff;background-size:1920px;background-attachment:fixed;background-position:50%;background-repeat:no-repeat;padding:80px 0;box-shadow:-2px -2px 16px rgba(0,0,0,.08)}
-#home-quem-somos h5{padding-bottom:10px;color:#ccc}
+#home-quem-somos h2{padding-bottom:10px;color:black}
+
+@media only screen and (max-width:1100px){
+  .col-center-80{width:95%;}
+}
+
+
 
 .logo-sticky{position:absolute;display:block;width:100px;height:100px;left:50%;margin-left:-45px;margin-top:-125px;background:url(../img/logo-sticky.8e079cee.webp);background-size:100px 100px;background-repeat:none}
 #home-noticias{padding:80px 0;background:#f5f5f5}
@@ -603,16 +628,33 @@ form.errors .error-message{display:block}
 
 @media(max-width:980px){.cookieConsentContainer{bottom:0!important;left:0!important;width:100%!important}}
 
-@media only screen and (min-width:1600px){.clinicas a,.clinicas a:hover,.operadoras a,.operadoras a:hover{padding:80px 140px}.pag-solucoes .clinicas a,.pag-solucoes .clinicas a:hover,.pag-solucoes .hospitais a,.pag-solucoes .hospitais a:hover,.pag-solucoes .operadoras a,.pag-solucoes .operadoras a:hover{padding:40px 60px}}
-@media only screen and (min-width:1096px)and (max-width:1270px){.menu{zoom:.85}.clinicas a,.clinicas a:hover,.hospitais a,.hospitais a:hover,.operadoras a,.operadoras a:hover{padding:80px 20px}.pag-solucoes .clinicas a,.pag-solucoes .clinicas a:hover,.pag-solucoes .hospitais a,.pag-solucoes .hospitais a:hover,.pag-solucoes .operadoras a,.pag-solucoes .operadoras a:hover{padding:80px 60px}.valor-plano{font-size:36px!important;line-height:36px;padding:10px 0 0 0}.valor-plano span{font-size:30px}.card-plano a{padding-left:20px;padding-right:20px}.teste-gratis a{font-size:13px!important;padding-left:0!important;padding-right:0!important}.mensal{font-size:14px!important}.desc-plano{padding-left:0!important;padding-right:0!important}.contato-especialista{color:#f47a20;font-weight:600;padding:30px 0}.contato-especialista span{font-size:30px!important}}
+@media only screen and (min-width:1600px){
+  .clinicas a,.clinicas a:hover,.operadoras a,.operadoras a:hover{padding:80px 140px}
+  .pag-solucoes .clinicas a,.pag-solucoes .clinicas a:hover,.pag-solucoes .hospitais a,.pag-solucoes .hospitais a:hover,.pag-solucoes .operadoras a,.pag-solucoes .operadoras a:hover{padding:40px 60px}
+}
+@media only screen and (min-width:1096px)and (max-width:1270px){
+  .menu{zoom:.85}.clinicas a,.clinicas a:hover,.hospitais a,.hospitais a:hover,.operadoras a,.operadoras a:hover{padding:80px 20px}
+  .pag-solucoes .clinicas a,.pag-solucoes .clinicas a:hover,.pag-solucoes .hospitais a,.pag-solucoes .hospitais a:hover,.pag-solucoes .operadoras a,.pag-solucoes .operadoras a:hover{padding:80px 60px}
+  .valor-plano{font-size:36px!important;line-height:36px;padding:10px 0 0 0}
+  .valor-plano span{font-size:30px}
+  .card-plano a{padding-left:20px;padding-right:20px}
+  .teste-gratis a{font-size:13px!important;padding-left:0!important;padding-right:0!important}
+  .mensal{font-size:14px!important}
+  .desc-plano{padding-left:0!important;padding-right:0!important}
+  .contato-especialista{color:#f47a20;font-weight:600;padding:30px 0}
+  .contato-especialista span{font-size:30px!important}
+}
 @media only screen and (min-width:320px)and (max-width:1095px){.back-to-top{position:fixed;height:40px;width:40px;bottom:20px;left:20px;display:none;background:rgba(0,167,163,.75);border-radius:60px;opacity:.95!important;box-shadow:2px 2px 4px rgba(0,0,0,.16)}.Cookie{background:rgba(0,0,0,.82)!important;-webkit-backdrop-filter:saturate(180%) blur(20px)!important;backdrop-filter:saturate(180%) blur(20px)!important;padding:20px!important;display:block!important;width:100%!important;left:0!important;bottom:0!important;border-radius:0!important}.Cookie p{font-size:14px!important;text-align:left!important}.Cookie a,.Cookie p{color:#fff!important}.Cookie a{font-weight:800!important;text-decoration:underline!important}.Cookie a:hover{color:#00b8b4!important}.Cookie .cookie-button{text-align:center!important;width:100%!important;display:block!important}.Cookie button{padding:8px 60px!important;margin:20px 10px 0 10px!important;font-size:14px!important}#n{height:10px;width:10px;display:block;background:transparent;position:absolute;top:520px}::-webkit-scrollbar-thumb{background:transparent;border-radius:10px}
 h2,h3{padding-top:10px}
 h1{font-size:38px;line-height:48px}
-h2{font-size:30px;line-height:30px}h3{font-size:24px;line-height:24px}h4{font-size:20px;line-height:20px}.btn-container,.btn-container-form,.formulario .btn-form{text-align:center}.btn{display:inline-block;width:90%!important;box-sizing:border-box}.pad-lg-m{padding:40px 0}.btn-lg{padding:11px 30px;font-size:18px}.header-content-nav,.header-content-right{display:none}.carrousel-content-item-cta ul li{display:normal;width:100%;padding:10px 0}.carrousel-content-item-cta a{width:100%;box-sizing:border-box;margin-right:0}.pag-solucoes .pag-title{background:linear-gradient(90deg,rgba(0,78,137,.92),rgba(0,167,163,.92)),url(../img/bg-solucoes.b7c04313.webp)}.pag-solucoes .clinicas a,.pag-solucoes .clinicas a:hover,.pag-solucoes .hospitais a,.pag-solucoes .hospitais a:hover,.pag-solucoes .operadoras a,.pag-solucoes .operadoras a:hover{padding:30px 40px;font-size:20px}#home-solicitar-atendimento-personalizado .modal a.close{display:block;background:#fff;float:right;position:relative;margin-top:-70px;margin-right:-20px;border-radius:8px;box-shadow:4px 4px 16px rgba(0,0,0,.32)}#home-solicitar-atendimento-personalizado .modal a.close:hover{border-radius:28px}#formSolicitarAtendimento .modal-body{padding:20px}#formSolicitarAtendimento .col-1-1{text-align:center}.itens-selecionados{margin:20px 0 0 0;padding:0}.itens-selecionados-tags{padding:10px 0}.itens-selecionados h5{margin-top:20px 0}
+h2{font-size:30px;line-height:30px}h3{font-size:24px;line-height:24px}h4{font-size:20px;line-height:20px}
+.btn-container,.btn-container-form,.formulario .btn-form{text-align:center}.btn{display:inline-block;width:90%!important;box-sizing:border-box}
+.pad-lg-m{padding:40px 0}.btn-lg{padding:11px 30px;font-size:18px}.header-content-nav,.header-content-right{display:none}.carrousel-content-item-cta ul li{display:normal;width:100%;padding:10px 0}.carrousel-content-item-cta a{width:100%;box-sizing:border-box;margin-right:0}.pag-solucoes .pag-title{background:linear-gradient(90deg,rgba(0,78,137,.92),rgba(0,167,163,.92)),url(../img/bg-solucoes.b7c04313.webp)}.pag-solucoes .clinicas a,.pag-solucoes .clinicas a:hover,.pag-solucoes .hospitais a,.pag-solucoes .hospitais a:hover,.pag-solucoes .operadoras a,.pag-solucoes .operadoras a:hover{padding:30px 40px;font-size:20px}#home-solicitar-atendimento-personalizado .modal a.close{display:block;background:#fff;float:right;position:relative;margin-top:-70px;margin-right:-20px;border-radius:8px;box-shadow:4px 4px 16px rgba(0,0,0,.32)}#home-solicitar-atendimento-personalizado .modal a.close:hover{border-radius:28px}#formSolicitarAtendimento .modal-body{padding:20px}#formSolicitarAtendimento .col-1-1{text-align:center}.itens-selecionados{margin:20px 0 0 0;padding:0}.itens-selecionados-tags{padding:10px 0}.itens-selecionados h5{margin-top:20px 0}
 .pag-politica-privacidade h2:after,.pag-politica-privacidade h3:after{content:"";height:0;width:60px;position:absolute;top:0;left:0;background:transparent}#apresentacao p{padding-top:40px}#missao-visao-valores .card-item{margin:20px 0 0 0}#diretoria .card-item{margin:0 0 20px 0}.pag-contato .pag-title{background:linear-gradient(90deg,rgba(0,58,117,.92),rgba(0,167,163,.92)),url(../img/bg-contato.28962b0a.webp);background-size:auto 150%;background-repeat:no-repeat;background-position:50%}.pag-contato .pag-title,.pag-quem-somos .pag-title{-webkit-animation:animatedBackground 10s linear alternate;animation:animatedBackground 10s linear alternate}.pag-quem-somos .pag-title{background:linear-gradient(90deg,rgba(0,58,117,.92),rgba(0,167,163,.92)),url(../img/bg-quem-somos.a42c4a5d.webp);background-size:auto 150%;background-repeat:no-repeat;background-position:50%}.pag-solucoes .pag-title{background:linear-gradient(90deg,rgba(0,58,117,.92),rgba(0,167,163,.92)),url(../img/bg-solucoes.b7c04313.webp);background-size:auto 150%;background-repeat:no-repeat;background-position:50%;-webkit-animation:animatedBackground 10s linear alternate;animation:animatedBackground 10s linear alternate}
 
-#mobile{display:block}div.informacoes{padding-left:0;padding-top:40px}
-.container-contato,.container-onde,.container-time,div.container-footer-logo{display:none}
+#mobile{display:block}
+div.informacoes{padding-left:0;padding-top:40px}
+.container-contato,.container-onde,.container-time,div.container-footer-logo{color:#A4A4A4; display:block}
 
 .footer-content{padding:40px 0 60px 0}
 .footer-content-nav{text-align:center;}
@@ -625,7 +667,9 @@ h2{font-size:30px;line-height:30px}h3{font-size:24px;line-height:24px}h4{font-si
 .container-newsletter button{width:90%!important;margin:20px 5% 0 5%}
 .col-1-4:first-child h5{text-align:center;padding-top:0}
 
-ul.footer-redes-sociais>li>a.btn-social{width:32px;height:32px;background-size:32px 32px;}
+
+
+ul.footer-redes-sociais>li>a.btn-social{width:32px;height:32px;background-size:32px 32px;text-align: center;}
 #minha-clinica-planos{background:linear-gradient(180deg,#ee7c63,#efaa63);height:auto;width:100%}
 #minha-clinica-planos h1{font-size:32px;padding:80px 0 80px 0}
 #minha-clinica-planos .card-plano{background-size:100% auto;background-position:top;background-repeat:no-repeat;max-width:300px;margin:0 20px 80px 20px;text-align:center}
@@ -725,4 +769,10 @@ ul.footer-redes-sociais>li>a.btn-social{width:32px;height:32px;background-size:3
   }
 
 
-
+  @media only screen and (max-width:1100px){
+    .footer-titulo{
+      text-align: center;
+      margin-top:2em;
+      margin-bottom: 0.5em;
+    }
+  }
